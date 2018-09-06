@@ -14,6 +14,15 @@
 }
 
 // Main navigation
+.content header h1 {
+  color: #fff !important;
+}
+#white {
+    color: #fff;
+}
+small {
+  color: #fff;
+}
 .navigation {
   padding-top: var(--nav-padding);
   padding-bottom: var(--nav-padding);
@@ -21,8 +30,7 @@
   margin-left: calc(var(--nav-item-space) * -1);
   font-size: 60%;
   font-weight: bold;
-  letter-spacing: .45em;
-  text-transform: uppercase;
+  letter-spacing: .1em;
 
   li {
     display: inline-block;
@@ -45,13 +53,11 @@
 .current {
 
   a {
-    color: var(--link-color);
   }
 }
 
 // Latest work link
 body:hover .latest {
-  color: var(--link-color) !important;
 }
 
 // Main content
@@ -127,7 +133,7 @@ body:hover .latest {
     margin-bottom: 16vmin;
     flex-direction: column;
     justify-content: center;
-    background: rgba($text-color, .02);
+    background: #da3a1e;
     @include padding-offset(var(--space-header));
     @include margin-offset(calc(var(--space-header) * -1));
 
@@ -278,8 +284,6 @@ body:hover .latest {
   .browser {
     --space-deco: var(--space-md);
     display: block;
-    width: calc(100% + var(--space-deco) * 2);
-    @include margin-offset(calc(var(--space-deco) * -1));
     margin-bottom: 1.8rem;
 
     @media (max-width: $breakpoint-md) {
@@ -733,6 +737,7 @@ body:hover .latest {
     @include heading();
     font-size: 200%;
     line-height: 1.1;
+    color: #fff;
 
     // Override heading defines in .content
     opacity: 1;
@@ -784,7 +789,6 @@ body:hover .latest {
 .footer {
   padding: 0 0 16vmin;
   font-size: 75%;
-  text-transform: lowercase;
 
   ul {
 
